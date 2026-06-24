@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SPORTS FOCUS TV</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background: #0a0a0a;
+            color: white;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #00ff88;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            text-align: center;
+            color: #888;
+            margin-bottom: 30px;
+        }
+        .match-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .match-card {
+            background: #1a1a1a;
+            padding: 20px;
+            border-radius: 12px;
+            border-left: 4px solid #00ff88;
+            transition: transform 0.2s;
+        }
+        .match-card:hover {
+            transform: scale(1.02);
+        }
+        .match-card h2 {
+            font-size: 1.3em;
+            margin-bottom: 5px;
+        }
+        .match-card .league {
+            color: #00ff88;
+            font-size: 0.8em;
+            text-transform: uppercase;
+        }
+        .match-card .datetime {
+            color: #888;
+            font-size: 0.9em;
+            margin: 10px 0;
+        }
+        .match-card .status {
+            display: inline-block;
+            background: #ff4444;
+            padding: 3px 12px;
+            border-radius: 20px;
+            font-size: 0.7em;
+            text-transform: uppercase;
+        }
+        .match-card a {
+            display: block;
+            text-align: center;
+            background: #00ff88;
+            color: #0a0a0a;
+            padding: 10px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 15px;
+            transition: background 0.2s;
+        }
+        .match-card a:hover {
+            background: #00cc66;
+        }
+        .match-card .offline {
+            background: #444;
+            color: #888;
+            pointer-events: none;
+        }
+        .footer {
+            text-align: center;
+            color: #444;
+            margin-top: 40px;
+            font-size: 0.8em;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>⚽ SPORTS FOCUS TV</h1>
+    <p class="subtitle">🌍 World Cup 2026 — Live Streams, Auto-Updated</p>
+    <div class="match-grid">
+        {% for match in matches %}
+        <div class="match-card">
+            <span class="league">{{ match.league }}</span>
+            <h2>{{ match.home }} vs {{ match.away }}</h2>
+            <div class="datetime">{{ match.date }} at {{ match.time }}</div>
+            
+            {% if match.stream_link %}
+                <span class="status" style="background: #00cc66;">🔴 LIVE</span>
+                <a href="/match/{{ match.id }}">▶ WATCH NOW</a>
+            {% else %}
+                <span class="status" style="background: #ff8800;">⏳ Upcoming</span>
+                <a href="#" class="offline">Stream not yet available</a>
+            {% endif %}
+        </div>
+        {% endfor %}
+    </div>
+
+    <div class="footer">
+        ⚽ All streams are sourced from public websites. Watch responsibly.
+    </div>
+
+</body>
+</html>
