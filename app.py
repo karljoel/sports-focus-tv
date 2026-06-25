@@ -20,7 +20,9 @@ matches = [
         "league": "World Cup",
         "date": "2026-06-25",
         "time": "01:00",
-        "stream_link": "https://hesgoalss.hes-goals.mov/?m=4627881&p=87350"
+        "stream_link": "https://hesgoalss.hes-goals.mov/?m=4627881&p=87350",
+        "stream_link2": None,
+        "stream_link3": None
     },
     {
         "id": 3,
