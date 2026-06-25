@@ -4,43 +4,7 @@ app = Flask(__name__)
 
 # Our list of matches (we'll add more later)
 matches = [
-    {
-        "id": 1,
-        "home": "Morocco",
-        "away": "Haiti",
-        "league": "World Cup",
-        "date": "2026-06-25",
-        "time": "01:00",
-        "stream_link": "https://hesgoalss.hes-goals.mov/?m=4627938&p=87350"
-    },
-    {
-        "id": 2,
-        "home": "Scotland",
-        "away": "Brazil",
-        "league": "World Cup",
-        "date": "2026-06-25",
-        "time": "01:00",
-        "stream_link": "https://hesgoalss.hes-goals.mov/?m=4627881&p=87350"
-    },
-    {
-        "id": 3,
-        "home": "Czech Republic",
-        "away": "Mexico",
-        "league": "World Cup",
-        "date": "2026-06-25",
-        "time": "04:00",
-        "stream_link": None 
-    },
-    {
-        "id": 4,
-        "home": "South Africa",
-        "away": "South Korea",
-        "league": "World Cup",
-        "date": "2026-06-25",
-        "time": "04:00",
-        "stream_link": None
-    },
-    {   "id": 5,
+    {   "id": 1,
         "home": "Curacao",
         "away": "Ivory Coast",
         "league": "World Cup",
@@ -48,16 +12,47 @@ matches = [
         "time": "23:00",
         "stream_link": None
     },
-    {   "id": 6,
+    {   "id": 2,
         "home": "Ecuador",
         "away": "Germany",
         "league": "World Cup",
         "date": "2026-06-25",
         "time": "23:00",
         "stream_link": None
-    }
+    },
+    {   "id": 3,
+        "home": "Tunisia",
+        "away": "Netherlands",
+        "league": "World Cup",
+        "date": "2026-06-27",
+        "time": "02:00",
+        "stream_link": None
+    },
+    {   "id": 4,
+        "home": "Japan",
+        "away": "Sweden",
+        "league": "World Cup",
+        "date": "2026-06-27",
+        "time": "02:00",
+        "stream_link": None
+     },
+     {   "id": 5,
+        "home": "Turkiye",
+        "away": "USA",
+        "league": "World Cup",
+        "date": "2026-06-27",
+        "time": "05:00",
+        "stream_link": None
+     },
+     {   "id": 6,
+        "home": "Paraguay",
+        "away": "Australia",
+        "league": "World Cup",
+        "date": "2026-06-27",
+        "time": "05:00",
+        "stream_link": None
+     }
 ]
-
 @app.route('/')
 def home():
     return render_template('index.html', matches=matches)
