@@ -4,6 +4,7 @@ app = Flask(__name__)
 
 # Our list of matches (we'll add more later)
 matches = [
+<<<<<<< HEAD
     {
         "id": 1,
         "home": "Morocco",
@@ -43,6 +44,9 @@ matches = [
         "stream_link": None
     },
     {   "id": 5,
+=======
+    {   "id": 1,
+>>>>>>> 1a0415a0a70b4cd3baeca7ff0a60f4ef0b5c543c
         "home": "Curacao",
         "away": "Ivory Coast",
         "league": "World Cup",
@@ -50,16 +54,47 @@ matches = [
         "time": "23:00",
         "stream_link": None
     },
-    {   "id": 6,
+    {   "id": 2,
         "home": "Ecuador",
         "away": "Germany",
         "league": "World Cup",
         "date": "2026-06-25",
         "time": "23:00",
         "stream_link": None
-    }
+    },
+    {   "id": 3,
+        "home": "Tunisia",
+        "away": "Netherlands",
+        "league": "World Cup",
+        "date": "2026-06-27",
+        "time": "02:00",
+        "stream_link": None
+    },
+    {   "id": 4,
+        "home": "Japan",
+        "away": "Sweden",
+        "league": "World Cup",
+        "date": "2026-06-27",
+        "time": "02:00",
+        "stream_link": None
+     },
+     {   "id": 5,
+        "home": "Turkiye",
+        "away": "USA",
+        "league": "World Cup",
+        "date": "2026-06-27",
+        "time": "05:00",
+        "stream_link": None
+     },
+     {   "id": 6,
+        "home": "Paraguay",
+        "away": "Australia",
+        "league": "World Cup",
+        "date": "2026-06-27",
+        "time": "05:00",
+        "stream_link": None
+     }
 ]
-
 @app.route('/')
 def home():
     return render_template('index.html', matches=matches)
