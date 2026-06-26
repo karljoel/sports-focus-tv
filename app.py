@@ -4,94 +4,152 @@ app = Flask(__name__)
 
 # Our list of matches
 matches = [
+    # 🔴 LIVE TONIGHT - Wednesday, June 24
     {
         "id": 1,
-        "home": "Morocco",
-        "away": "Haiti",
-        "league": "World Cup",
-        "date": "2026-06-25",
-        "time": "01:00",
-        "stream_link": "https://hesgoalss.hes-goals.mov/?m=4627938&p=87350"
+        "home": "Switzerland",
+        "away": "Canada",
+        "league": "World Cup - Group B",
+        "date": "2026-06-24",
+        "time": "23:00 EAT",
+        "stream_link": None
     },
     {
         "id": 2,
-        "home": "Scotland",
-        "away": "Brazil",
-        "league": "World Cup",
-        "date": "2026-06-25",
-        "time": "01:00",
-        "stream_link": "https://hesgoalss.hes-goals.mov/?m=4627881&p=87350"
+        "home": "Bosnia and Herzegovina",
+        "away": "Qatar",
+        "league": "World Cup - Group B",
+        "date": "2026-06-24",
+        "time": "23:00 EAT",
+        "stream_link": None
     },
+    # Thursday, June 25
     {
         "id": 3,
-        "home": "Czech Republic",
-        "away": "Mexico",
-        "league": "World Cup",
+        "home": "Morocco",
+        "away": "Haiti",
+        "league": "World Cup - Group C",
         "date": "2026-06-25",
-        "time": "04:00",
+        "time": "02:00 EAT",
         "stream_link": None
     },
     {
         "id": 4,
-        "home": "South Africa",
-        "away": "South Korea",
-        "league": "World Cup",
+        "home": "Scotland",
+        "away": "Brazil",
+        "league": "World Cup - Group C",
         "date": "2026-06-25",
-        "time": "04:00",
+        "time": "02:00 EAT",
         "stream_link": None
     },
     {
         "id": 5,
-        "home": "Curacao",
-        "away": "Ivory Coast",
-        "league": "World Cup",
+        "home": "South Africa",
+        "away": "South Korea",
+        "league": "World Cup - Group A",
         "date": "2026-06-25",
-        "time": "23:00",
+        "time": "05:00 EAT",
         "stream_link": None
     },
     {
         "id": 6,
-        "home": "Ecuador",
-        "away": "Germany",
-        "league": "World Cup",
+        "home": "Czech Republic",
+        "away": "Mexico",
+        "league": "World Cup - Group A",
         "date": "2026-06-25",
-        "time": "23:00",
+        "time": "05:00 EAT",
         "stream_link": None
     },
+    # Friday, June 26
     {
         "id": 7,
-        "home": "Tunisia",
-        "away": "Netherlands",
-        "league": "World Cup",
-        "date": "2026-06-27",
-        "time": "02:00",
+        "home": "Curacao",
+        "away": "Ivory Coast",
+        "league": "World Cup - Group E",
+        "date": "2026-06-26",
+        "time": "00:00 EAT",
         "stream_link": None
     },
     {
         "id": 8,
-        "home": "Japan",
-        "away": "Sweden",
-        "league": "World Cup",
-        "date": "2026-06-27",
-        "time": "02:00",
+        "home": "Ecuador",
+        "away": "Germany",
+        "league": "World Cup - Group E",
+        "date": "2026-06-26",
+        "time": "00:00 EAT",
         "stream_link": None
     },
     {
         "id": 9,
-        "home": "Turkiye",
-        "away": "USA",
-        "league": "World Cup",
-        "date": "2026-06-27",
-        "time": "05:00",
+        "home": "Tunisia",
+        "away": "Netherlands",
+        "league": "World Cup - Group F",
+        "date": "2026-06-26",
+        "time": "03:00 EAT",
         "stream_link": None
     },
     {
         "id": 10,
+        "home": "Japan",
+        "away": "Sweden",
+        "league": "World Cup - Group F",
+        "date": "2026-06-26",
+        "time": "03:00 EAT",
+        "stream_link": None
+    },
+    {
+        "id": 11,
+        "home": "Turkey",
+        "away": "USA",
+        "league": "World Cup - Group D",
+        "date": "2026-06-26",
+        "time": "06:00 EAT",
+        "stream_link": None
+    },
+    {
+        "id": 12,
         "home": "Paraguay",
         "away": "Australia",
-        "league": "World Cup",
+        "league": "World Cup - Group D",
+        "date": "2026-06-26",
+        "time": "06:00 EAT",
+        "stream_link": None
+    },
+    # Saturday, June 27
+    {
+        "id": 13,
+        "home": "Cape Verde",
+        "away": "Saudi Arabia",
+        "league": "World Cup - Group H",
         "date": "2026-06-27",
-        "time": "05:00",
+        "time": "04:00 EAT",
+        "stream_link": None
+    },
+    {
+        "id": 14,
+        "home": "Uruguay",
+        "away": "Spain",
+        "league": "World Cup - Group H",
+        "date": "2026-06-27",
+        "time": "04:00 EAT",
+        "stream_link": None
+    },
+    {
+        "id": 15,
+        "home": "New Zealand",
+        "away": "Belgium",
+        "league": "World Cup - Group G",
+        "date": "2026-06-27",
+        "time": "07:00 EAT",
+        "stream_link": None
+    },
+    {
+        "id": 16,
+        "home": "Egypt",
+        "away": "Iran",
+        "league": "World Cup - Group G",
+        "date": "2026-06-27",
+        "time": "07:00 EAT",
         "stream_link": None
     }
 ]
