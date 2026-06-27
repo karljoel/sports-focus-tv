@@ -7,12 +7,12 @@ matches = [
     # 🔴 LIVE TONIGHT - Wednesday, June 24
     {
         "id": 1,
-        "home": "Switzerland",
-        "away": "Canada",
+        "home": "Croatia",
+        "away": "England",
         "league": "World Cup - Group B",
         "date": "2026-06-24",
         "time": "23:00 EAT",
-        "stream_link": None
+        "stream_link": '<iframe id="player" width="1100" height="619" allowfullscreen="" loading="eager" fetchpriority="high" referrerpolicy="no-referrer-when-downgrade" allow="autoplay; fullscreen; picture-in-picture" src="https://912acsss8af382.shootny.com/playerv5.php?match=4627921&amp;key=9f39972b67d6ce22189507d008acwc26">\n                </iframe>'
     },
     {
         "id": 2,
