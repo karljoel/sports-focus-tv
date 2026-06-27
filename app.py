@@ -12,7 +12,7 @@ matches = [
         "league": "World Cup - Group B",
         "date": "2026-06-24",
         "time": "23:00 EAT",
-        "stream_link": "https://912acss8af382.shootmy.com/player5.php?match=4627933&key=f939972_wc26"
+        "stream_link": "<iframe id=\"player\" width=\"1100\" height=\"619\" allowfullscreen=\"\" loading=\"eager\" fetchpriority=\"high\" referrerpolicy=\"no-referrer-when-downgrade\" allow=\"autoplay; fullscreen; picture-in-picture\" src=\"https://912acsss8af382.shootny.com/playerv5.php?match=4627933&amp;key=9f39972b67d6ce22189507d008acwc26\">\n                </iframe>"
     },
     {
         "id": 2,
@@ -21,8 +21,7 @@ matches = [
         "league": "World Cup - Group B",
         "date": "2026-06-24",
         "time": "23:00 EAT",
-        "stream_link": "https://912acss8af382.shootmy.com/player5.php?match=4627934&key=f939972_wc26"
-    },
+        "stream_link":none
     # Thursday, June 25
     {
         "id": 3,
